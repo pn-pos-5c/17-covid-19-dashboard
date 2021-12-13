@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "45d04454-8fbd-4b1e-857f-555aa9e75e19": {
+      "ProjectGuid": "45d04454-8fbd-4b1e-857f-555aa9e75e19",
+      "DisplayName": "Covid-19-dashboard",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

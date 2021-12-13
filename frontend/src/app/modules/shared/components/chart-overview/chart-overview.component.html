@@ -1,0 +1,16 @@
+<div>
+  <div class="row">
+    <app-line-chart chartLabel="Daily Infections" [chartData]="dailyInfectionsData"
+                    [chartDataLabels]="dailyInfectionsLabels"></app-line-chart>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-bar-chart chartLabel="Count" [chartData]="ageGroupInfectionsData"
+                     [chartDataLabels]="ageGroupInfectionsLabels"></app-bar-chart>
+    </div>
+    <div class="col">
+      <app-pie-chart chartLabel="Gender" [chartData]="genderInfectionsData"
+                     [chartDataLabels]="genderInfectionsLabels"></app-pie-chart>
+    </div>
+  </div>
+</div>

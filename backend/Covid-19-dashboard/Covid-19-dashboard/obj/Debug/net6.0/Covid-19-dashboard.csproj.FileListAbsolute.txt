@@ -31,3 +31,4 @@ C:\HTL\5_Klasse\POS\17-covid-19-dashboard\backend\Covid-19-dashboard\Covid-19-da
 C:\HTL\5_Klasse\POS\17-covid-19-dashboard\backend\Covid-19-dashboard\Covid-19-dashboard\obj\Debug\net6.0\ref\Covid-19-dashboard.dll
 C:\HTL\5_Klasse\POS\17-covid-19-dashboard\backend\Covid-19-dashboard\Covid-19-dashboard\obj\Debug\net6.0\Covid-19-dashboard.pdb
 C:\HTL\5_Klasse\POS\17-covid-19-dashboard\backend\Covid-19-dashboard\Covid-19-dashboard\obj\Debug\net6.0\Covid-19-dashboard.genruntimeconfig.cache
+C:\HTL\5_Klasse\POS\17-covid-19-dashboard\backend\Covid-19-dashboard\Covid-19-dashboard\obj\Debug\net6.0\Covid-19-dashboard.csproj.AssemblyReference.cache

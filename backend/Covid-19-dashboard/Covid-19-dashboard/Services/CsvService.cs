@@ -46,6 +46,8 @@ public class CsvService : IHostedService
             string[] parts = line.Split(";");
             string[] date = parts[0].Split(".");
 
+            if (parts[1] != "Österreich") continue;
+
             covidService.dailyInfections.Add(new DailyInfection
             {
                 Id = id,
