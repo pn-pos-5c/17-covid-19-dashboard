@@ -11,7 +11,7 @@
         </li>
       </ul>
       <div class="d-flex">
-        <button class="btn btn-outline-success" type="submit">Logout</button>
+        <button *ngIf="loggedIn" class="btn btn-outline-success" type="submit" (click)="logout()">Logout</button>
       </div>
     </div>
   </div>

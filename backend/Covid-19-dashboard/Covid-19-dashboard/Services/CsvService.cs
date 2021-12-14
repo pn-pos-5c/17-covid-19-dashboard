@@ -92,7 +92,7 @@ public class CsvService : IHostedService
                 Id = id,
                 AgeGroup = parts[2],
                 Gender = parts[6],
-                Count = int.Parse(parts[7])
+                Count = int.Parse(parts[9])
             });
 
             id++;

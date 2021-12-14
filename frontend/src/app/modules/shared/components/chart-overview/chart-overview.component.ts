@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DataProviderService} from '../../../core/services/data-provider.service';
 import DailyInfection from '../../../../models/DailyInfection';
-import DailyDeath from '../../../../models/DailyDeath';
 import AgeGroupInfection from '../../../../models/AgeGroupInfection';
-import AgeGroupDeath from '../../../../models/AgeGroupDeath';
 
 @Component({
   selector: 'app-chart-overview',
@@ -12,18 +10,14 @@ import AgeGroupDeath from '../../../../models/AgeGroupDeath';
 })
 export class ChartOverviewComponent implements OnInit {
   dailyInfections: DailyInfection[] = [];
-  dailyDeaths: DailyDeath[] = [];
   ageGroupInfections: AgeGroupInfection[] = [];
-  ageGroupDeaths: AgeGroupDeath[] = [];
 
   constructor(private dataProvider: DataProviderService) {
   }
 
   ngOnInit(): void {
     this.dataProvider.getDailyInfections().subscribe(infections => this.dailyInfections = infections);
-    this.dataProvider.getDailyDeaths().subscribe(deaths => this.dailyDeaths = deaths);
     this.dataProvider.getAgeGroupInfections().subscribe(infections => this.ageGroupInfections = infections);
-    this.dataProvider.getAgeGroupDeaths().subscribe(deaths => this.ageGroupDeaths = deaths);
   }
 
   get dailyInfectionsData(): number[] {
@@ -83,14 +77,5 @@ export class ChartOverviewComponent implements OnInit {
 
     return arr.map(x => x.gender);
   }
-
-  get dailyDeathsData(): number[] {
-    return this.dailyDeaths.map(x => x.count);
-  }
-
-  get dailyDeathsLabels(): string[] {
-    return this.dailyInfections.map(x => x.day.toString().substring(0, 10));
-  }
-
 
 }
